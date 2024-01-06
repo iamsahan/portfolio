@@ -29,7 +29,6 @@ function Header() {
     function clickNav(num) {
         setActive(num)
     }
-    
   return (
     <header className="header">
         <nav className="nav container">
