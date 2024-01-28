@@ -5,6 +5,7 @@ import Data from './Data'
 import Scrolldown from './ScrollDown'
 import { motion } from "framer-motion"
 
+
 const sliderVarient = {
   initial: {
     x:0,
@@ -32,7 +33,7 @@ const Home = () => {
                 
                 
                 <motion.div className="slidingTextAnimation" variants={sliderVarient} initial="initial" animate="animate">
-                  Writer content createrInfluence
+                iamsahan#Crafting Digital Experiences
                 </motion.div>
 
                     <Data />

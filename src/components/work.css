@@ -24,8 +24,7 @@
 .work__container {
     grid-template-columns: repeat(2, max-content);
     gap: 3rem;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .work__card {
@@ -78,7 +77,7 @@
         margin-bottom: 0.75rem;
     }
 
-    .wokr__title {
+    .work__title {
         margin-bottom: 0.25rem;
     }
   }
