@@ -59,8 +59,8 @@
     background-size: cover;
     justify-self: center;
     order: 1;
-    width: 330px;
-    height: 330px;
+    width: 350px;
+    height: 350px;
     z-index: 10;
     position: relative;
     border: 2px solid rgb(153, 251, 133);
@@ -140,29 +140,29 @@
 
 @keyframes animate__before {
     0% {
-        border-radius: 65% 35% 29% 71% / 55% 30% 70% 45%;
+        border-radius: 62% 38% 62% 38% / 61% 35% 65% 39% ;
     }
 
     50% {
-        border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
+        border-radius: 37% 63% 39% 61% / 37% 61% 39% 63% ;
     }
 
     100% {
-        border-radius: 65% 35% 29% 71% / 55% 30% 70% 45%;
+        border-radius: 62% 38% 62% 38% / 61% 35% 65% 39% ;
     }
 }
 
 @keyframes animate__after {
     0% {
-        border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
+        border-radius: 37% 63% 39% 61% / 37% 61% 39% 63% ;
     }
 
     50% {
-        border-radius: 65% 35% 29% 71% / 55% 30% 70% 45%;
+        border-radius: 62% 38% 62% 38% / 61% 35% 65% 39% ;
     }
 
     100% {
-        border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
+        border-radius: 37% 63% 39% 61% / 37% 61% 39% 63% ;
     }
 }
 
@@ -239,6 +239,10 @@
   @media screen and (max-width: 350px){
     
     .home__img {
+        width: 180px;
+        height: 180px;
+    }
+    .home__img-wrapper {
         width: 180px;
         height: 180px;
     }
