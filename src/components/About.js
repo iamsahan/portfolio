@@ -4,6 +4,7 @@ import AboutImg from "../assets/profile.jpg"
 import CV from "../assets/John-Cv.pdf"
 import Info from "./Info"
 
+
 function About() {
   return (
     <section className="about section" id="about">

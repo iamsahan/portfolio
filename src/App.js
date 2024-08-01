@@ -9,11 +9,18 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Journey from './components/Journey';
 
+import Lottie from 'lottie-react'
+
+import Animation2 from './assets/Animation - 1721398717969.json';
+
+
 function App() {
   return (
     <div className="App">
       <Header />
       <main className='main'>
+      <Lottie animationData={Animation2} style={{position: 'absolute', top:'60px', opacity:'0.2'}}/>
+
         <Home />
         <About />
         <Skills />
