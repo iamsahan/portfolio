@@ -19,8 +19,7 @@ function App() {
     <div className="App">
       <Header />
       <main className='main'>
-      <Lottie animationData={Animation2} style={{position: 'absolute', top:'60px', opacity:'0.2'}}/>
-
+      <Lottie animationData={Animation2} style={{position: 'absolute', width:'100%', top:'60px', opacity:'0.2'}}/>
         <Home />
         <About />
         <Skills />
