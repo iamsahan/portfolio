@@ -53,7 +53,7 @@
 }
 
 .home__img {
-    background: url(../assets//profile-pic-3-modified-2.png);
+    background: url(../assets//p2.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -63,7 +63,7 @@
     height: 350px;
     z-index: 10;
     position: relative;
-    border: 2px solid rgb(153, 251, 133);
+    border: 10px solid rgb(73, 73, 73);
     vertical-align: middle;
 }
 
@@ -82,9 +82,9 @@
 }
 
 .home__img-wrapper::before {
-    background-color: rgb(110, 110, 110);
+    background-color: rgb(176, 176, 176);
     animation: animate__before 8s ease-in-out infinite;
-    border: 2px solid rgb(153, 251, 133);
+    border: 10px solid rgb(107, 107, 107);
 }
 
 .home__img-wrapper::after,
