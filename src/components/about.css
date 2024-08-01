@@ -4,10 +4,57 @@
     column-gap: 4rem;
 }
 
+
 .about__img {
-    width: 290px;
-    border-radius: 1.5rem;
+    width: 300px;
+    height: 300px; /* Set a height to ensure the element has size */
+    border-radius: 15rem;
     justify-self: center;
+    position: relative; /* Ensure positioning context for the pseudo-elements */
+    overflow: hidden; /* Prevents the pseudo-elements from spilling out */
+    background-color: #f0f0f0; /* Optional: background color for visibility */
+}
+
+.about__img::before,
+.about__img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15rem;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.about__img::before {
+    border: 15px solid rgb(85, 86, 85, 0.5); /* Outer border */
+    animation: borderPulse 3s infinite;
+}
+
+.about__img::after {
+    border: 15px solid rgb(85, 86, 85, 0.5); /* Inner border */
+    top: 5px; /* Offset from the outer border */
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    animation: borderPulse 2s infinite reverse; /* Reverse animation for variation */
+}
+
+@keyframes borderPulse {
+    0% {
+        border-color: rgb(85, 86, 85, 0.5);
+        transform: scale(1);
+    }
+    50% {
+        border-color: rgb(85, 86, 85, 0.5);
+        transform: scale(1.1);
+    }
+    100% {
+        border-color: rgb(85, 86, 85, 0.5);
+        transform: scale(1);
+    }
 }
 
 .about__info {
@@ -51,7 +98,8 @@
    }
 
    .about__img {
-    width: 220px;
+    width: 280px;
+    border-radius: 15rem;
    }
 
    .about__box {

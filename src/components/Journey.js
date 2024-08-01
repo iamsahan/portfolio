@@ -1,13 +1,31 @@
 import React from 'react'
 import "./journey.css"
+import { motion } from 'framer-motion'
+import { fadeIn } from '../varients'
+
 
 function Journey() {
   return (
     <section className="qualification section">
-        <h2 className="section__title">My Journey</h2>
-        <span className="section__subtitle">My Journey</span>
+        <motion.h2 className="section__title"
+        variants={fadeIn("top", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once:false, amount:0.7}}
+        >My Journey</motion.h2>
+        <motion.span className="section__subtitle"
+        variants={fadeIn("top", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once:false, amount:0.7}}
+        >My Journey</motion.span>
 
-        <div className="qualification__container container">
+        <motion.div className="qualification__container container"
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once:false, amount:0.7}}
+        >
             <div className="qualification__sections">
                 <div className="qualification__content qualification__content-active">
                     <div className="qualification__data">
@@ -70,7 +88,7 @@ function Journey() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     </section>
   )
 }

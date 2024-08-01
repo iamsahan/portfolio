@@ -1,6 +1,9 @@
 import React from 'react'
 import "./services.css"
 
+import { motion } from 'framer-motion';
+import { fadeIn } from '../varients';
+
 function Services() {
     const[state, toggleStae] = React.useState(0);
 
@@ -10,10 +13,25 @@ function Services() {
 
   return (
     <section className="services section" id="services">
-        <h2 className="section__title">Services</h2>
-        <span className="section__subtitle">What I Offer</span>
+        <motion.h2 className="section__title"
+        variants={fadeIn("top", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once:false, amount:0.7}}
+        >Services</motion.h2>
+        <motion.span className="section__subtitle"
+        variants={fadeIn("top", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once:false, amount:0.7}}
+        >What I Offer</motion.span>
 
-        <div className="services__container container grid">
+        <motion.div className="services__container container grid"
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once:false, amount:0.7}}
+        >
             <div className="services__content">
                 <div>
                     <i className="uil uil-window services__icon"></i>
@@ -271,7 +289,7 @@ function Services() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     </section>
   )
 }

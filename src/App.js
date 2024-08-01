@@ -11,15 +11,18 @@ import Journey from './components/Journey';
 
 import Lottie from 'lottie-react'
 
+
 import Animation2 from './assets/Animation - 1721398717969.json';
 
 
 function App() {
   return (
-    <div className="App">
+    <div>
+
       <Header />
       <main className='main'>
-      <Lottie animationData={Animation2} style={{position: 'absolute', width:'100%', top:'60px', opacity:'0.2'}}/>
+      <Lottie animationData={Animation2} style={{position: 'fixed', width:'100%', opacity:'0.1', zIndex:'-1'}}/>
+      <Lottie animationData={Animation2} style={{position: 'fixed', rotate:'180deg', width:'100%', opacity:'0.4', zIndex:'-1'}}/>
         <Home />
         <About />
         <Skills />

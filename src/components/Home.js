@@ -5,6 +5,8 @@ import Data from './Data'
 import Scrolldown from './ScrollDown'
 import { motion } from "framer-motion"
 
+import { fadeIn } from '../varients';
+
 
 const sliderVarient = {
   initial: {
@@ -27,9 +29,14 @@ const Home = () => {
             <div className="home__content grid">
                 <Social />
 
-                <div className="home__img-wrapper">
+                <motion.div className="home__img-wrapper"
+                variants={fadeIn("left", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once:false, amount:0.7}}
+                >
                     <div className="home__img"></div>
-                </div>
+                </motion.div>
                 
                 
                 <motion.div className="slidingTextAnimation" variants={sliderVarient} initial="initial" animate="animate">

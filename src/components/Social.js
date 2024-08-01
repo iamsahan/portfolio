@@ -1,8 +1,17 @@
-import React from 'react'
+import React from 'react';
+
+import { motion } from "framer-motion"
+
+import { fadeIn } from '../varients';
 
 const Social = () => {
   return (
-    <div className="home__social">
+    <motion.div className="home__social"
+    variants={fadeIn("right", 0.2)}
+    initial="hidden"
+    whileInView={"show"}
+    viewport={{once:false, amount:0.7}}
+    >
         <a href="https://www.linkedin.com/in/sahanerandikaweerakkody" className="home__social-icon" target="_blank">
             <i class="uil uil-linkedin"></i>
         </a>
@@ -12,7 +21,7 @@ const Social = () => {
         <a href="" className="home__social-icon" target="_blank">
             <i class="uil uil-twitter"></i>
         </a>
-    </div>
+    </motion.div>
   )
 }
 

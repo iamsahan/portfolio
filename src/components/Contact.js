@@ -1,6 +1,9 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import "./contact.css"
+import { motion } from 'framer-motion';
+import { fadeIn } from '../varients';
+
 
 function Contact() {
     const form = useRef();
@@ -13,13 +16,28 @@ function Contact() {
   };
   return (
     <contact className="contact section" id="contact">
-        <h2 className="section__title">Get In Touch</h2>
-        <span className="section__subtitle">Contact Me</span>
+        <motion.h2 className="section__title"
+        variants={fadeIn("top", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once:false, amount:0.7}}
+        >Get In Touch</motion.h2>
+        <motion.span className="section__subtitle"
+        variants={fadeIn("top", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once:false, amount:0.7}}
+        >Contact Me</motion.span>
 
         <div className="contact__container container grid">
             
 
-            <div className="contact__content">
+            <motion.div className="contact__content"
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{once:false, amount:0.7}}
+            >
                 <h3 className="contact__title">Talk To Me</h3>
                  <div className="contact__info">
                     <div className="contact__card">
@@ -52,9 +70,14 @@ function Contact() {
                         <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                     </div>
                  </div>
-            </div>
+            </motion.div>
 
-            <div className="contact__content">
+            <motion.div className="contact__content"
+            variants={fadeIn("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{once:false, amount:0.7}}
+            >
                 <h3 className="contact__title">Write Me Your Projects</h3>
 
                 <form ref={form} onSubmit={sendEmail} className="contact__form">
@@ -93,7 +116,7 @@ function Contact() {
                         </svg>
                     </button>
                 </form>
-            </div>
+            </motion.div>
 
         </div>
     </contact>

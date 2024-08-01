@@ -1,8 +1,18 @@
 import React from 'react'
 
+import { motion } from "framer-motion"
+
+import { fadeIn } from '../varients';
+
 const Data = () => {
   return (
-    <div className="home__data">
+   
+    <motion.div className="home__data"
+    variants={fadeIn("right", 0.2)}
+    initial="hidden"
+    whileInView={"show"}
+    viewport={{once:false, amount:0.7}}
+    >
         <h1 className="home__title"> Sahan Weerakkody</h1>
         
         <h3 className="home__subtitle"> Fullstack Developer </h3>
@@ -29,7 +39,7 @@ const Data = () => {
                 </svg>
         </a>
         
-    </div>
+    </motion.div>
   )
 }
 

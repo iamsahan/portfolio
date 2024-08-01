@@ -63,7 +63,7 @@
     height: 350px;
     z-index: 10;
     position: relative;
-    border: 10px solid rgb(73, 73, 73);
+    border: 10px solid rgb(245, 245, 205);
     vertical-align: middle;
 }
 
@@ -84,7 +84,7 @@
 .home__img-wrapper::before {
     background-color: rgb(176, 176, 176);
     animation: animate__before 8s ease-in-out infinite;
-    border: 10px solid rgb(107, 107, 107);
+    border: 10px solid rgb(224, 245, 180);
 }
 
 .home__img-wrapper::after,

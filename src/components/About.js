@@ -4,16 +4,43 @@ import AboutImg from "../assets/profile.jpg"
 import CV from "../assets/John-Cv.pdf"
 import Info from "./Info"
 
+import { motion } from "framer-motion"
+
+import { fadeIn } from '../varients';
+
 
 function About() {
   return (
     <section className="about section" id="about">
-        <h2 className="section__title">About Me</h2>
-        <span className="section__subtitle">My Introduction</span>
+        <motion.h2 className="section__title"
+        variants={fadeIn("top", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once:false, amount:0.7}}
+        >About Me</motion.h2>
+        <motion.span className="section__subtitle"
+        variants={fadeIn("top", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once:false, amount:0.7}}
+        >My Introduction</motion.span>
         <div className="about__container container grid">
-            <img src={AboutImg} className="about__img"></img>
+          <motion.div className="about__img"
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{once:false, amount:0.7}}
+          >
+          <img src={AboutImg} className="about__img"></img>
+          </motion.div>
+            
 
-            <div className="about__data">
+            <motion.div className="about__data"
+            variants={fadeIn("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{once:false, amount:0.7}}
+            >
                 <Info />
 
                 <p className="about__description">
@@ -48,7 +75,7 @@ function About() {
                 ></path>
               </svg>
                 </a>
-            </div>
+            </motion.div>
         </div>
     </section>
   )

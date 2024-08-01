@@ -56,6 +56,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 html {
@@ -123,6 +124,7 @@ img {
   max-width: 968px;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 .grid {

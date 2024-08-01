@@ -1,10 +1,18 @@
 import React from 'react'
 import "./footer.css"
+import { motion } from 'framer-motion'
+import { fadeIn } from '../varients'
+
 
 function Footer() {
   return (
     <footer className="footer">
-        <div className="footer__container container">
+        <motion.div className="footer__container container"
+        variants={fadeIn("down", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once:false, amount:0.7}}
+        >
             <h1 className="footer__title">iamsahan</h1>
 
             <ul className="footer__list">
@@ -32,8 +40,8 @@ function Footer() {
                     <i class="bx bxl-twitter"></i>
                 </a>
             </div>
-            <span className="footer__copy">&#169; 2024 iamsahan. All rigths reserved</span>
-        </div>
+            <span className="footer__copy">&#169; 2024 iamsahan.dev | All rigths reserved</span>
+        </motion.div>
     </footer>
   )
 }
