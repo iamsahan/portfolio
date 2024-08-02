@@ -33,7 +33,7 @@ const Home = () => {
                 variants={fadeIn("left", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{once:false, amount:0.7}}
+                viewport={{once:false, amount:0.1}}
                 >
                     <div className="home__img"></div>
                 </motion.div>
