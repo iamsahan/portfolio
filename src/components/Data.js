@@ -17,7 +17,9 @@ const Data = () => {
         
         <h3 className="home__subtitle"> Fullstack Developer </h3>
         
-        <p className="home__description"> I'm Passionate Fullstack Developer with strong programming skills and a solid foundation in Information Technology. </p>
+        <p className="home__description"> I’m a skilled Fullstack Developer with a solid IT foundation, passionate about creating effective solutions through strong programming expertise.
+
+</p>
         
         <a href="#contact" className="button button--flex">
             Say Hello <svg

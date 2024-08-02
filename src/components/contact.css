@@ -27,9 +27,8 @@
 }
 
 .contact__card-icon {
-    font-size: 2rem;
     color: var(--title-color);
-    margin-bottom: var(--mb-0-25);
+    margin-bottom: 5px;
 }
 
 .contact__card-title,
@@ -47,12 +46,13 @@
 }
 
 .contact__button {
-    color: var(--text-color);
+    color: rgb(17, 32, 81);
     font-size: var(--small-font-size);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     column-gap: 0.25rem;
+    font-weight: bold;
 }
 
 .contact__button-icon {
@@ -71,7 +71,7 @@
 .contact__form-div {
     position: relative;
     margin-bottom: var(--mb-2);
-    height: 4rem;
+    height: 5rem;
 }
 
 .contact__form-input {
@@ -91,12 +91,15 @@
 
 .contact__form-tag {
     position: absolute;
-    top: -0.75rem;
+    top: -0.6rem;
     left: 1.25rem;
-    font-size: var(--small-font-size);
+    font-size: 15px;
     padding: 0.25rem;
     background-color: var(--body-color);
     z-index: 10;
+    border-radius: 10px;
+    color: rgb(9, 9, 9);
+    font-weight: bold;
 }
 
 .contact__form-area {

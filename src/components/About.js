@@ -44,9 +44,11 @@ function About() {
                 <Info />
 
                 <p className="about__description">
-                    I'm 2yr+ experienced fullstack developer in Srilanka. Currently I'm following my Bsc(hons) software engineering degree in
-                    Sri Lanka Institute Of Information Technology (SLIIT).
-                </p>
+                <b>Full-Stack Developer | Software Engineering Student</b>
+                <br/><br/>
+                I am a dedicated full-stack developer with over two years of experience, currently pursuing a BSc(Hons) in Software Engineering at the Sri Lanka Institute of Information Technology (SLIIT). My skill set includes expertise in Data Structures and Algorithms(DSA), Object-Oriented Programming(OOP), and design patterns.
+                <br/><br/>
+                I am familier with AWS for cloud services, and I am proficient in Git for version control. My understanding of the Software Development Life Cycle (SDLC) and Agile methodologies allows me to manage and deliver projects effectively. I am passionate about developing efficient, high-quality software solutions that meet user needs and business goals.</p>
 
                 <a download="" href={CV} className="button button--flex"> Download CV 
                 <svg

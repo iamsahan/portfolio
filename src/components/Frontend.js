@@ -56,7 +56,7 @@ function Frontend() {
                     <div>
                         <h3 className="skills__name">React</h3>
                         <div className="skills__level">
-                            <div className="skill__meater" style={{width:"100px"}}></div>
+                            <div className="skill__meater" style={{width:"50px"}}></div>
                         </div>
                     </div>
                 </div>

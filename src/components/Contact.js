@@ -4,6 +4,13 @@ import "./contact.css"
 import { motion } from 'framer-motion';
 import { fadeIn } from '../varients';
 
+import Lottie from 'lottie-react'
+
+
+import Animation1 from '../assets/email2-lottie.json';
+import Animation2 from '../assets/linkdin-lottie.json';
+import Animation3 from '../assets/email3-lottie.json';
+
 
 function Contact() {
     const form = useRef();
@@ -41,7 +48,9 @@ function Contact() {
                 <h3 className="contact__title">Talk To Me</h3>
                  <div className="contact__info">
                     <div className="contact__card">
-                        <i className="bx bx-mail-send  contact__card-icon"></i>
+                        <i className="bx contact__card-icon">
+                        <Lottie animationData={Animation3} style={{ width:'50px', height:'50px'}}/>
+                        </i>
 
                         <h3 className="contact__card-title">Email</h3>
                         <span className="contact__card-data">weerakkodyse@gmail.com</span>
@@ -51,17 +60,21 @@ function Contact() {
                     </div>
                     
                     <div className="contact__card">
-                        <i className="bx bx-mail-send contact__card-icon"></i>
+                        <i className="bx ontact__card-icon">
+                        <Lottie animationData={Animation1} style={{ width:'50px', height:'50px'}}/>
+                        </i>
 
                         <h3 className="contact__card-title">Whatsapp</h3>
-                        <span className="contact__card-data">0719350300</span>
+                        <span className="contact__card-data">+94706888992</span>
 
                         <a href="https://api.whatsapp.com/send?phone=0706888992&text=Hello, more information!" className="contact__button" target="blank">Message
                         <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                     </div>
                     
                     <div className="contact__card">
-                        <i className="bx bx-mail-send contact__card-icon"></i>
+                        <i className="bx contact__card-icon">
+                        <Lottie animationData={Animation2} style={{ width:'50px', height:'50px'}}/>
+                        </i>
 
                         <h3 className="contact__card-title">linkdin</h3>
                         <span className="contact__card-data">Sahan Erandika Weerakkody</span>
@@ -92,7 +105,7 @@ function Contact() {
                     </div>
 
                     <div className="contact__form-div contact__form-area">
-                        <label className="contact__form-tag">Project</label>
+                        <label className="contact__form-tag">Message</label>
                         <textarea name="project" cols="30" rows="10" className="contact__form-input" placeholder="write your message"></textarea>
                     </div>
 

@@ -20,14 +20,9 @@ function Work() {
         whileInView={"show"}
         viewport={{once:false, amount:0.7}}
         >Most Recent Works</motion.span>
-        <motion.div
-        variants={fadeIn("down", 0.2)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{once:false, amount:0.7}}
-        >
-        <Works />
-        </motion.div>
+        
+          <Works />
+        
        
     </section>
   )
