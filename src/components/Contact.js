@@ -43,7 +43,7 @@ function Contact() {
             variants={fadeIn("right", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{once:false, amount:0.7}}
+            viewport={{once:false, amount:0.1}}
             >
                 <h3 className="contact__title">Talk To Me</h3>
                  <div className="contact__info">
@@ -89,7 +89,7 @@ function Contact() {
             variants={fadeIn("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{once:false, amount:0.7}}
+            viewport={{once:false, amount:0.1}}
             >
                 <h3 className="contact__title">Write Me Your Projects</h3>
 
