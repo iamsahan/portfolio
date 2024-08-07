@@ -1,8 +1,8 @@
-import React from 'react'
-import "./about.css"
-import AboutImg from "../assets/profile.jpg"
-import CV from "../assets/John-Cv.pdf"
-import Info from "./Info"
+import React from 'react';
+import "./about.css";
+import AboutImg from "../assets/profile.jpg";
+import CV from "../assets/secv002.pdf";
+import Info from "./Info";
 
 import { motion } from "framer-motion"
 
