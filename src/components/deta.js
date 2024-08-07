@@ -1,60 +1,60 @@
-import Work1 from "../assets/work1.jpg";
-import Work2 from "../assets/work2.jpg";
-import Work3 from "../assets/work3.jpg";
+import Recipe from "../assets/recipeMan.png";
 import Garment from "../assets/garment.png";
 import Sea from "../assets/CleanSea2.png";
+import Pos from "../assets/pos.png";
+import Event from "../assets/eventMan.png";
+import Ninja from "../assets/Blue Smartphone Promo Poster.png";
 
 export const projectsData = [
     {
       id: 1,
-      image: Work1,
+      image: Recipe,
       title: "Online Recipe Management System",
       description: `
-        
-        Project Description:
-        
-        Developed an engaging Fruit Ninja-style game using Android Studio, challenging 
-        players to slice flying fruits while avoiding bombs.
+        ----------------------------------------------------------------
+        An online recipe management system called CookBooker to organize 
+        and manage recipes, providing users with a seamless experience for 
+        browsing and categorizing their favorite recipes.
         
         Key Features:
+          - Secure admin and user login.
+          - Recipe categorization and organization.
+          - Intuitive and user-friendly interface.
+          - Recipe details, ingredients, and instructions.
         
-          - Intuitive gameplay mechanics.
-          - Dynamic and vibrant graphics.
-          - Responsive touch controls.
-          - Real-time score tracking.
-          - Power-ups and bombs to enhance the gaming experience.
-            Tools and Technologies:
-          - Android Studio for development.
-          - Kotlin for backend logic.
-          - XML for UI design.
+        Tools and Technologies:
+          - PHP for backend logic.
+          - HTML and CSS for frontend design and styling.
+          - JavaScript for interactive elements.
+          - MySQL for database management.
           - Git for version control.
+         
       `,
       category: "web",
     },
     {
       id: 2,
-      image: Work2,
-      title: "Online Transport System",
+      image: Event,
+      title: "Online Event Management System",
       description: `
         ----------------------------------------------------------------
-        Developed an Fruit Ninja game using Android Studio, challenging 
-        players to slice flying fruits while avoiding bombs.
+        An online event management system designed to streamline the 
+        management of events, providing users with a seamless experience 
+        for planning, scheduling, and managing event details.
     
         Key Features:
-        - Intuitive gameplay mechanics.
-        - Dynamic and vibrant graphics.
-        - Responsive touch controls.
-        - Real-time score tracking.
-        - Power-ups and bombs to enhance the gaming experience.
+        - Secure admin and user login.
+        - Intuitive and user-friendly interface.
+        - Event creation and management.
+        - Attendee registration and management
+        - Advanced search and filtering functionality.
     
         Tools and Technologies:
-        - Android Studio for development.
-        - Kotlin for backend logic.
-        - XML for UI design.
+        - Java Servlets for backend logic.
+        - HTML and CSS for frontend design and styling.
+        - JavaScript for interactive elements.
+        - MySQL for database management.
         - Git for version control.
-    
-        This project showcases my skills in mobile game development, 
-        UI design, and problem-solving.
       `,
       category: "web",
     },
@@ -84,16 +84,53 @@ export const projectsData = [
     },
     {
       id: 4,
-      image: Work3,
+      image: Pos,
       title: "Inventory Management System",
-      description: "bffddg dsergerr freerge ",
+      description: ` 
+        ----------------------------------------------------------------
+        An online inventory management system designed to handle customer 
+        orders, manage inventory levels, and maintain supplier relationships, 
+        providing a seamless experience for businesses.
+    
+        Key Features:
+        - Secure admin and user login with JWT authentication.
+        - Customer order management.
+        - Inventory tracking and management.
+        - Supplier management.
+        - Intuitive and user-friendly interface.
+        - POS cashier interface with barcode scanning.
+    
+        Tools and Technologies:
+        - MongoDB for database management.
+        - Express.js for backend framework.
+        - React for frontend development.
+        - Node.js for backend runtime.
+        - JWT for secure authentication.
+        - Git for version control`,
       category: "web",
     },
     {
       id: 5,
-      image: Work3,
+      image: Ninja,
       title: "Fruit Ninja Game",
-      description: "bffddg dsergerr freerge ",
+      description: `
+        ----------------------------------------------------------------
+        Developed an Fruit Ninja game using Android Studio, challenging 
+        players to slice flying fruits while avoiding bombs.
+    
+        Key Features:
+        - Intuitive gameplay mechanics.
+        - Dynamic and vibrant graphics.
+        - Responsive touch controls.
+        - Real-time score tracking.
+        - Power-ups and bombs to enhance the gaming experience.
+    
+        Tools and Technologies:
+        - Android Studio for development.
+        - Kotlin for backend logic.
+        - XML for UI design.
+        - Git for version control..
+      `,
       category: "app",
     },
     {

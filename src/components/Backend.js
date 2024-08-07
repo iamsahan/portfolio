@@ -70,7 +70,17 @@ function Backend() {
             <div className="skills__data">
                 <i className="bx bx-badge-check"></i>
                 <div>
-                    <h3 className="skills__name">Laravel</h3>
+                    <h3 className="skills__name">Kotlin</h3>
+                    <div className="skills__level">
+                        <div className="skill__meater" style={{width:"50px"}}></div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="skills__data">
+                <i className="bx bx-badge-check"></i>
+                <div>
+                    <h3 className="skills__name">Spring Boot</h3>
                     <div className="skills__level">
                         <div className="skill__meater" style={{width:"50px"}}></div>
                     </div>

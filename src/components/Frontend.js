@@ -44,7 +44,7 @@ function Frontend() {
                     <div>
                         <h3 className="skills__name">JavaScript</h3>
                         <div className="skills__level">
-                            <div className="skill__meater" style={{width:"100px"}}></div>
+                            <div className="skill__meater" style={{width:"90px"}}></div>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ function Frontend() {
                     <div>
                         <h3 className="skills__name">React</h3>
                         <div className="skills__level">
-                            <div className="skill__meater" style={{width:"50px"}}></div>
+                            <div className="skill__meater" style={{width:"90px"}}></div>
                         </div>
                     </div>
                 </div>
@@ -66,9 +66,9 @@ function Frontend() {
                 <div className="skills__data">
                     <i className="bx bx-badge-check"></i>
                     <div>
-                        <h3 className="skills__name">Angular</h3>
+                        <h3 className="skills__name">XML</h3>
                         <div className="skills__level">
-                            <div className="skill__meater" style={{width:"50px"}}></div>
+                            <div className="skill__meater" style={{width:"80px"}}></div>
                         </div>
                     </div>
                 </div>
@@ -76,19 +76,9 @@ function Frontend() {
                 <div className="skills__data">
                     <i className="bx bx-badge-check"></i>
                     <div>
-                        <h3 className="skills__name">jQuery</h3>
+                        <h3 className="skills__name">Flutter</h3>
                         <div className="skills__level">
                             <div className="skill__meater" style={{width:"60px"}}></div>
-                        </div>
-                    </div>
-                </div>
-         
-                <div className="skills__data">
-                    <i className="bx bx-badge-check"></i>
-                    <div>
-                        <h3 className="skills__name">TypeScript</h3>
-                        <div className="skills__level">
-                            <div className="skill__meater" style={{width:"40px"}}></div>
                         </div>
                     </div>
                 </div>
